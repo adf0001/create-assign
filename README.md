@@ -9,7 +9,7 @@ npm install create-assign
 # Usage & Api
 ```javascript
 
-create_assign = require("create-assign");
+var create_assign = require("create-assign");
 
 //create_assign(proto, properties /*, properties2, ...*/)
 
