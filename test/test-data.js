@@ -1,10 +1,10 @@
 
-// global, for html page
+//global variable, for html page, refer tpsvr @ npm.
 create_assign = require("../create-assign.js");
 
 module.exports = {
 
-	"create_assign()": function (done) {
+	"create_assign": function (done) {
 		var a = {
 			f1: function () { return 1; },
 			f2: function () { return 2; },
@@ -34,4 +34,4 @@ module.exports = {
 if (typeof showResult !== "function") showResult = function (text) { console.log(text); }
 
 //for mocha
-if (typeof describe === "function") describe('mocha-test', function () { for (var i in module.exports) { it(i, module.exports[i]); } });
+if (typeof describe === "function") describe('create_assign', function () { for (var i in module.exports) { it(i, module.exports[i]).timeout(5000); } });
