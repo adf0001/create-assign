@@ -1,7 +1,7 @@
 {
   "name": "create-assign",
-  "version": "1.0.1",
-  "description": "A combination of Object.create() and Object.assign().",
+  "version": "1.0.2",
+  "description": "A combination of calling Object.create() then Object.assign().",
   "main": "create-assign.js",
   "scripts": {
     "test": "mocha"

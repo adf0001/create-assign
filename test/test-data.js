@@ -27,6 +27,37 @@ module.exports = {
 		);
 	},
 
+	".assign polyfill": function (done) {
+		var a = {
+			f1: function () { return 1; },
+			f2: function () { return 2; },
+		};
+		var b = {
+			f3: function () { return 3; },
+			f4: function () { return 4; },
+		};
+		var c = {
+			f2: function () { return 22; },
+			f3: function () { return 33; },
+		};
+
+		var assign = create_assign.assign;
+
+		var aa = assign(a, b, c);
+
+		done(!
+			(
+				a === aa &&
+
+				aa.f1() === 1 && aa.f2() === 22 && aa.f3() === 33 && aa.f4() === 4 &&
+
+				((Object.assign && create_assign.assign === Object.assign) ||
+					(!Object.assign && create_assign.assign)
+				)
+			)
+		);
+	},
+
 };
 
 // for html page

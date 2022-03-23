@@ -1,5 +1,5 @@
 # create-assign
-A combination of Object.create() and Object.assign().
+A combination of calling Object.create() then Object.assign().
 
 # Install
 ```
