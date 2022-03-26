@@ -1,6 +1,6 @@
 {
   "name": "create-assign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A combination of calling Object.create() then Object.assign().",
   "main": "create-assign.js",
   "scripts": {

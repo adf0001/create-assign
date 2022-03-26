@@ -27,7 +27,7 @@ module.exports = {
 		);
 	},
 
-	".assign polyfill": function (done) {
+	".assign/polyfill": function (done) {
 		var a = {
 			f1: function () { return 1; },
 			f2: function () { return 2; },
